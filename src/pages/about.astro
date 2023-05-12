@@ -19,18 +19,6 @@ const skillFontWeight = "bold";
 const skillTextTransform = "uppercase";
 ---
 
-<style define:vars={{ skillColor, skillFontWeight, skillTextTransform }}>
-  h1 {
-    color: purple;
-    font-size: 4rem;
-  }
-  .skill {
-    color: var(--skillColor);
-    font-weight: var(--skillFontWeight);
-    text-transform: var(--skillTextTransform);
-  }
-</style>
-
 <BaseLayout pageTitle={pageTitle}>
   <h2>... and my new Astro site!</h2>
 
@@ -64,3 +52,15 @@ const skillTextTransform = "uppercase";
 
   {goal === 3 ? <p>My goal is to finish in 3 days.</p> : <p>My goal is not 3 days.</p>}
 </BaseLayout>
+
+<style define:vars={{ skillColor, skillFontWeight, skillTextTransform }}>
+  h1 {
+    color: purple;
+    font-size: 4rem;
+  }
+  .skill {
+    color: var(--skillColor);
+    font-weight: var(--skillFontWeight);
+    text-transform: var(--skillTextTransform);
+  }
+</style>
