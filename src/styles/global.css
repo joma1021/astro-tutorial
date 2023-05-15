@@ -80,3 +80,13 @@ a:focus {
     display: none;
   }
 }
+
+/* dark mode styles */
+html.dark {
+  background-color: #0d0950;
+  color: #cfd6fa;
+}
+
+.dark .nav-links a {
+  color: #9a6eb1;
+}
